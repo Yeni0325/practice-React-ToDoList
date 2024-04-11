@@ -16,6 +16,7 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   max-width: 600px; /* 적당한 최대 너비 설정 */
   margin: auto; /* 상하 마진을 auto로 설정하여 페이지 중앙에 위치 */
+  width: 800px;
 }
 
 .input-container {
@@ -110,6 +111,7 @@ body, html {
 #todo-list {
   list-style: none;
   padding: 0;
+  width: 400px;
 }
 
 #todo-list li {
