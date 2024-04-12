@@ -8,7 +8,8 @@ export default function TodoTemplate () {
   
   const handleChangeInput = (e) => setTodo(e.target.value);
   const handleClickTodo = () => {
-    setTodoList([...todoList, todo]);
+    // setTodoList([...todoList, todo]);
+    setTodoList(prevTodoList => [...prevTodoList, todo]);
     setTodo('');
   }
 
