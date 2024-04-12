@@ -1,8 +1,6 @@
 import { useState } from 'react'
 
 export default function Todo({todo}){
-  console.log("todo : ", todo);
-
   const [checked, setChecked] = useState(false);
   const [hamburgerClicked, setHamburgerClicked] = useState(false);
   const [isEditing, setIsEditing] = useState(false);
@@ -12,9 +10,7 @@ export default function Todo({todo}){
   const handleChecked = (e) => setChecked(e.target.checked);
   const handleClickHamburger = () => setHamburgerClicked(!hamburgerClicked);
   const handleUpdateTodo = () => setIsEditing(!isEditing);
-  const handleDeleteTodo = (e) => {
-    setIsDeleted(!isDeleted);
-  }
+  const handleDeleteTodo = () => setIsDeleted(!isDeleted);
   const handleChangeTodo = (e) => setUpdateTodo(e.target.value);
 
   return(
